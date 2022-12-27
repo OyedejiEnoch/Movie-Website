@@ -24,12 +24,16 @@ header {
     background-color: var(--secondary-color);
 }
 
+
 header h1 {
     margin-top: 0;
     color: #fff;
     padding-left: 20px;
     margin-bottom: 0;
 }
+
+
+
 
 .search {
     background-color: transparent;
@@ -47,6 +51,18 @@ header h1 {
 .search:focus {
     outline: none;
     background-color: var(--primary-color);
+}
+
+@media (max-width:800px) {
+    header h1 {
+        font-size: 20px;
+
+    }
+
+    .search {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.8rem;
+    }
 }
 
 main {
@@ -104,7 +120,8 @@ main {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: #fff;
+    background-color: rgba(44, 44, 44, 0.5);
+    color: #fff;
     padding: 2rem;
     transform: translateY(101%);
     transition: transform 0.3s ease-in;
@@ -116,5 +133,5 @@ main {
 
 .pages {
     color: #fff;
-    margin: 40px auto;
+
 }
